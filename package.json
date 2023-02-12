@@ -1,0 +1,22 @@
+{
+  "name": "tailwindcssprtc",
+  "version": "1.0.0",
+  "description": "Tailwindcss practice code. ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehedi-MHS/TailwindCSSprtc.git"
+  },
+  "author": "Mehedi-MHS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mehedi-MHS/TailwindCSSprtc/issues"
+  },
+  "homepage": "https://github.com/Mehedi-MHS/TailwindCSSprtc#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}
