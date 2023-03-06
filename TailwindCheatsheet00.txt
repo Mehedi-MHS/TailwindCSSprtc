@@ -1,0 +1,106 @@
+Tailwind CSS cheatsheet from docs: #2
+======================================
+                        
+
+                        FLEXBOX
+                        =======
+
+FLEX BASIS:
+-----------
+  Utilities for controlling the initial size of the flex items.
+
+Class   -  Properties
+basis-0	    flex-basis: 0px;
+basis-1	    flex-basis: 0.25rem; /* 4px */
+basis-2	    flex-basis: 0.5rem; /* 8px */
+basis-3	    flex-basis: 0.75rem; /* 12px */
+basis-4	    flex-basis: 1rem; /* 16px */
+basis-5	    flex-basis: 1.25rem; /* 20px */
+basis-6	    flex-basis: 1.5rem; /* 24px */
+
+
+
+FLEX DIRECTION:
+---------------
+ Utilities for controlling the direcion of the flex items.
+
+
+Class         -       Properties
+flex-row	        flex-direction: row;
+flex-row-reverse	flex-direction: row-reverse;
+flex-col	        flex-direction: column;
+flex-col-reverse	flex-direction: column-reverse;
+
+
+
+FLEX WRAP:
+---------
+ Utilities for controlling how flex items wrap.
+
+ Class       -      Properties
+flex-wrap	        flex-wrap: wrap; (flex items donot overflows the container,breaks down if necessary)
+flex-wrap-reverse	flex-wrap: wrap-reverse; (same as above but reverse order)
+flex-nowrap	        flex-wrap: nowrap; ( Use flex-nowrap to prevent flex items from wrapping, causing inflexible items to overflow the container if necessary)
+
+
+FLEX GROW AND SHRINK:
+--------------------
+Utilities for controlling how flex items both grow and shrink.
+
+Class     -     Properties
+flex-1	        flex: 1 1 0%; ( to allow a flex item to grow and shrink as needed, ignoring its initial size: )
+flex-auto	    flex: 1 1 auto; (   to allow a flex item to grow and shrink, taking into account its initial size: 01 )
+flex-initial	flex: 0 1 auto; (  to allow a flex item to shrink but not grow, taking into account its initial size. initial size means the width and height of components set using css )
+flex-none	    flex: none; ( to prevent a flex item from growing or shrinking:  )
+shrink-0        flex-shrink-0; (To prevent an element from growing for breakpoint change)
+
+
+FLEX GROW:
+----------
+Utilities for controlling how flex items grow.
+
+Class   Properties
+grow	flex-grow: 1; (to allow a flex item to grow to fill any available space:)
+grow-0	flex-grow: 0; ( to prevent a flex item from growing:)
+
+
+SPACE-BETWEEN:
+--------------
+
+space-x-value : space between of childs in x axis. 
+                eg: space-x-4
+space-y-value : for y axis.
+
+
+  ----------------------------------------------
+ | center a parent container: relative mx-auto .|
+ | that means position:relative;margin-x:auto;  |
+  ----------------------------------------------
+
+WIDTH AND HEIGHT:
+-----------------
+ 
+w-{value} , h-{value}
+
+NOTE: value must be dividable by 12 [eg:12,24,36,48...]
+
+Fixed : eg: w-24 , h-48
+Fraction width: w-1/2 (50%), h-3/4 (75%)
+
+
+        Dark Mode:
+    ==================
+    1: add darkMode:"class" in tailwind.config.js file for custom mode selection and darkMode:"media" for prefering system color scheme
+    2: add "dark" class in html. <html lang="en" class="dark"
+    3: To change using JavaScript, use document.documentElement.classList.add("dark") for selecting darkMode. 
+      and document.documentElement.classList.remove("dark") for removing dark mode and switchig to light mode.
+      Add mode in localStorage to make the theme mode permanent. localStorage.setItem("theme","dark"), localStorage.removeItem("theme")
+    4: In custom theme selection mode, we can also read the system color preference using matchMedia api.
+
+
+
+
+
+
+
+

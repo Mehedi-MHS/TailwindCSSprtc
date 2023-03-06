@@ -4,7 +4,7 @@
   "description": "Tailwindcss practice code. ",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./src/tailwindcss.css -o ./output/tailwindcss.css"
   },
   "repository": {
     "type": "git",
